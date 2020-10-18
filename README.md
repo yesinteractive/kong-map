@@ -25,13 +25,13 @@ all entities can be viewed directly via a link to Kong Manager.
 
 #### Declarative Configuration Viewer/Editor ####
 KongMap is deployed with a browser based version of Kong's CLI tool, decK. Here you can view, edit, and export Kong declarative configurations for your open source 
-and Enterprise clusters via YAML. Declarative
+and Enterprise clusters via YAML. Configurations can easily be copied and pasted from one Kong cluster to another or between workspaces. Declarative
 configuration editing can be disabled by KongMap configuration, or managed via RBAC permissions if using Kong Enterprise. 
 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-deck.png?raw=true "kongmap")
 
 ## Compatibility ## 
-KongMap supports both Kong Open Source and Kong Enterprise Clusters greater than version 1.5.
+KongMap supports both Kong Open Source and Kong Enterprise Clusters greater than version 1.5 and supports both DB and Non-DB (dbless) Kong configurations.
 
 ## Docker Installation ##
 
@@ -78,7 +78,7 @@ Run the container with the following command. Set the ports to your preferred ex
 ```
 $ docker run -d \
   -e "KONGMAP_CLUSTER_JSON=$KONG_CLUSTERS" \
-  -e "KONGMAP_URL=http://url_to_kongmap" \
+  -e "KONGMAP_URL=http://url_to_kongmap:8100" \
   -p 8100:80 \
   -p 8143:443 \
   yesinteractive/kongmap
