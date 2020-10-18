@@ -1,0 +1,51 @@
+# Example declarative configuration for Kong API Gateway.
+# Will create /jokes endpoint with a rate limit of 5
+# requests per minute. Dadjokes.online is being used
+# as the upstream searvice.
+_format_version: "1.1"
+services:
+- connect_timeout: 60000
+  host: dadjokes.online
+  name: dad_jokes
+  path: /echo
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  write_timeout: 60000
+  routes:
+  - name: dad_jokes
+    paths:
+    - /jokes
+    path_handling: v1
+    preserve_host: false
+    protocols:
+    - http
+    regex_priority: 0
+    strip_path: true
+    https_redirect_status_code: 426
+plugins:
+- name: rate-limiting
+  config:
+    day: null
+    fault_tolerant: true
+    header_name: null
+    hide_client_headers: false
+    hour: null
+    limit_by: consumer
+    minute: 5
+    month: null
+    policy: cluster
+    redis_database: 0
+    redis_host: null
+    redis_password: null
+    redis_port: 6379
+    redis_timeout: 2000
+    second: null
+    year: null
+  enabled: true
+  protocols:
+  - grpc
+  - grpcs
+  - http
+  - https
