@@ -1,7 +1,7 @@
 # KongMap #
-Kongmap is a free visualization tool which allows you to view and edit configurations of
+Kongmap is a free visualization tool which allows you to view and declaratively edit configurations of
 your Kong API Gateway Clusters, including Routes, Services, and Plugins/Policies. The tool is 
- being offered for installation via Docker and Kubernetes at this time.  
+available for installation on Docker and Kubernetes only at this time.  
 
 ![GitHub](https://img.shields.io/github/license/yesinteractive/kong-map?style=for-the-badge)
 
@@ -9,8 +9,9 @@ your Kong API Gateway Clusters, including Routes, Services, and Plugins/Policies
 
 #### Cluster View ####
 Allows an admin to view a dynamic map of their Kong API Gateway clusters and visually see relationships between
-Workspaces (for Kong Enterprise), Services, Routes (Endpoints), and Plugins (Policies). Clicking on any entity displays
-details of the entity and related links. Plugins can be toggled from view. 
+Workspaces (for Kong Enterprise), Services, Routes (Endpoints), and Plugins (Policies). Cluster view can also
+be used to see configuration of the proxy plane of your Kong for Kubernetes Ingress Controller. Clicking on any 
+entity displays details of the entity and related links. Plugins can be toggled from view. 
 
 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-home.png?raw=true "kongmap")
@@ -24,14 +25,16 @@ all entities can be viewed directly via a link to Kong Manager.
 
 
 #### Declarative Configuration Viewer/Editor ####
-KongMap is deployed with a browser based version of Kong's CLI tool, decK. Here you can view, edit, and export Kong declarative configurations for your open source 
+KongMap is deployed with a browser based implementation of Kong's CLI tool, decK. Here you can view, edit, and export Kong declarative configurations for your open source 
 and Enterprise clusters via YAML. Configurations can easily be copied and pasted from one Kong cluster to another or between workspaces. Declarative
 configuration editing can be disabled by KongMap configuration, or managed via RBAC permissions if using Kong Enterprise. 
 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-deck.png?raw=true "kongmap")
 
 ## Compatibility ## 
-KongMap supports both Kong Open Source and Kong Enterprise Clusters greater than version 1.5 and supports both DB and Non-DB (dbless) Kong configurations.
+KongMap supports both Kong Open Source and Kong Enterprise Clusters greater than version 1.3 and supports both DB and Non-DB (dbless) Kong configurations.
+KongMap also supports Kong for Kubernetes Ingress Controller versions greater than 0.5 (In Kong for Kubernetes,
+the Ingress Controller's proxy container must have its Admin API exposed in some fashion.)
 
 ## Docker Installation ##
 
@@ -49,7 +52,7 @@ The connections to your Kong clusters are defined via JSON. The below example il
     "kong_ent": "true",
     "kong_ent_token": "admin",
     "kong_ent_token_name": "kong-admin-token",
-    "kong_ent_manager_url": "http://<kongmanager_url:8002>"
+    "kong_ent_manager_url": "http://kongmanager_url:8002"
   },
   "my kong open source cluster": {
     "kong_admin_api_url": "http://kongapi_url:8001",
