@@ -80,7 +80,7 @@ Run the container with the following command. Set the ports to your preferred ex
 
 ```
 $ docker run -d \
-  -e "KONGMAP_CLUSTER_JSON=$KONG_CLUSTERS" \
+  -e "KONGMAP_CLUSTERS_JSON=$KONG_CLUSTERS" \
   -e "KONGMAP_URL=http://url_to_kongmap:8100" \
   -p 8100:80 \
   -p 8143:443 \
