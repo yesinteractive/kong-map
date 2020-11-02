@@ -9,7 +9,7 @@ available for installation on Docker and Kubernetes only at this time.
 
 - [Features](#Features)
 - [Compatibility](#Compatibility)
-- [Docker Installion](#Docker-Installation)
+- [Docker Installation](#Docker-Installation)
 - [Questions and Feedback](#Feedback-and-Issues)
 
 ## Features
