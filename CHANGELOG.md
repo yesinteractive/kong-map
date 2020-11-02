@@ -1,3 +1,16 @@
+## 20201101
+### Added
+- Docker compose install examples.
+- Tags, which are now searchable, to all routes and services nodes in cluster map.
+### Changed
+- Filter in cluster view can search and filter to all details of an element of map such as tag name, or url or a service, etc. Previously could only filter on node name.
+- Fixed word wrap issues in web app view template. 
+- Added Kong, Inc. trademark disclaimers.
+- Other misc page formatting.
+### Removed
+-None
+
+
 ## 20201026
 ### Added
 - Confirmation dialog when about to save new declarative configuration.
@@ -5,7 +18,7 @@
 
 ### Changed
 - Altered cluster details displayable data in cluster view
-- Alertered key value data appearance in cluster/map view
+- Altered key value data appearance in cluster/map view
 
 ### Removed
 - None

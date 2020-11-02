@@ -1,0 +1,16 @@
+# docker compose example
+# exposes kongmap on port 8100
+# must set KONGMAP_CLUSTERS_JSON either in file or as a variable with export command prior
+# usage example: docker-compose -f docker-compose.yaml up -d
+---
+version: '3'
+services:
+  kongmap:
+    image: docker.io/yesinteractive/kong-map
+    container_name: kongmap
+    environment:
+      - KONGMAP_CLUSTERS_JSON=$KONG_CLUSTERS
+      - KONGMAP_URL=http://url_to_kongmap:8100
+    restart: always
+    ports:
+      - "8100:80"

@@ -4,6 +4,9 @@ your Kong API Gateway Clusters, including Routes, Services, and Plugins/Policies
 available for installation on Docker and Kubernetes only at this time.  
 
 ![GitHub](https://img.shields.io/github/license/yesinteractive/kong-map?style=for-the-badge)
+[![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
+[![Version](https://img.shields.io/badge/version-20201101-green?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
+
 
 ## Features ## 
 
