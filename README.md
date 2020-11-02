@@ -12,7 +12,7 @@ available for installation on Docker and Kubernetes only at this time.
 - [Docker Installion](#Docker-Installation)
 - [Questions and Feedback](#Feedback-and-Issues)
 
-##Features
+## Features
 
 #### Cluster View
 Allows an admin to view a dynamic map of their Kong API Gateway clusters and visually see relationships between
