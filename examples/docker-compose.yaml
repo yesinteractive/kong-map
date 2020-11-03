@@ -6,7 +6,7 @@
 version: '3'
 services:
   kongmap:
-    image: docker.io/yesinteractive/kong-map
+    image: docker.io/yesinteractive/kongmap
     container_name: kongmap
     environment:
       - KONGMAP_CLUSTERS_JSON=$KONG_CLUSTERS
