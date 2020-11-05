@@ -93,7 +93,9 @@ Export the config to a variable:
 
 #### 2. Start Container
 
-Run the container with the following command. Set the ports to your preferred exposed ports. The example below exposes KongMap on ports 8100 and 8143. Notice the `KONGMAP_URL` variable. Set this optional variable if you have a need to set all KongMap URL's to a specific domain or URL.
+Run the container with the following command. Set the ports to your preferred exposed ports. The example below exposes KongMap on ports 8100 and 8143. 
+Notice the `KONGMAP_URL` variable. Set this variable to the KongMap URL that you will connect to KongMap in your browser. For example, if 
+running locally and exposing KongMap on port 8100, set to `http://localhost:8100`.
 
 ```
 $ docker run -d \
