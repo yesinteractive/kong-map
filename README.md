@@ -50,7 +50,7 @@ Docker image is Alpine 3.11 based running PHP 7.3 on Apache. The container expos
 
 Below are instructions using the `docker run` command. For an example using `docker-compose`, see the example in the [examples directory folder.](https://github.com/yesinteractive/kong-map/blob/main/examples)
 
-#### 1. Export Cluster Configurations to Variable
+#### 1. Export Cluster Configurations to `KONG_CLUSTERS` Environment Variable
 
 The connections to your Kong clusters are defined via JSON. The below example illustrates adding two Kong clusters to KongMap:
 
@@ -74,13 +74,16 @@ The connections to your Kong clusters are defined via JSON. The below example il
   }
 }
   ```
+Below is a definition of all variables in the KONG_CLUSTERS json config. All variables are required.
 
-If you do not want the ability to edit clusters via declarative config, and wish to just have a read-only
-view to the declarative config, set `kong-edit-config` to `false`. 
-
-Kong Enterprise Users: Notice the `kong_ent` configurations. Enable and configure this if the cluster you are configuring is Kong Cluster. If you do not, only the Default workspace
-will be visible in your Kong Enterprise Cluster.  Be sure to set your Kong RBAC Admin token name
-and value if RBAC is enabled.
+| Parameter              | Description | Required  |
+|------------------------|-------------|-----------|
+| `kong_admin_api_url`   | Full URL to Kong Admin API URL. Example: `http://kongadminapi:8001`     | `yes`     |
+| `kong_edit_config`     | Boolean. Set to `true` to allow editing of Kong configs via KongMap. `false` will only allow readonly access to configs.           | `yes`     |
+| `kong_ent`             | Boolean. Set `true` if you are connecting to a Kong Enterprise Cluster and to enable workspace support in KongMap. Only the default workspace will show if set to `false` and connected to a Kong Entperprise cluster. Otherwise set to `false`          | `yes`     |
+| `kong_ent_token`       | The admin token for connecting to your Kong Enterprise Cluster Admin API. Set by RBAC configuration in Kong. Can be set to `null` if not needed.           | `yes`     |
+| `kong_ent_token_name`  | The admin token header name for connecting to your Kong Enterprise Cluster Admin API.  Typically is `kong-admin-token`. Can be set to `null` if not needed.          | `yes`     |
+| `kong_ent_manager_url` | Full URL to a Kong Manager if you wish to open entities in Kong Manager from KongMap. Can be set to `null` if not needed.           | `yes`     |
 
 Export the config to a variable:
 

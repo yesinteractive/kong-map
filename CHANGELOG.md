@@ -1,3 +1,13 @@
+## 20201106
+### Added
+- Ability to edit routes, plugins, and services in route analyzer. Clicking the edit button
+will open the config editor and highlight the element to be edited in the config.
+### Changed
+- None
+### Removed
+-None
+
+
 ## 20201101
 ### Added
 - Docker compose install examples.
