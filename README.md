@@ -8,6 +8,9 @@ available for installation on Docker and Kubernetes only at this time.
 [![Version](https://img.shields.io/badge/version-20201106-green?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
 
 - [Features](#Features)
+    - [Cluster View](#Cluster-View)
+    - [Endpoint Analyzer](#Endpoint-Analyzer)
+    - [Declarative Configuration Viewer/Editor](#Declarative-Configuration-Viewer/Editor)        
 - [Compatibility](#Compatibility)
 - [Docker Installation](#Docker-Installation)
 - [Questions and Feedback](#Feedback-and-Issues)
@@ -19,7 +22,10 @@ Allows an admin to view a dynamic map of their Kong API Gateway clusters and vis
 Workspaces (for Kong Enterprise), Services, Routes (Endpoints), and Plugins (Policies). Cluster view can also
 be used to see configuration of the proxy plane of your Kong for Kubernetes Ingress Controller. Clicking on any 
 entity displays details of the entity and related links. Plugins can be toggled from view and map is searchable
-(search by entity name, Kong tag, workspace, url, or any other details related to a Kong entity.)
+(search by entity name, Kong tag, workspace, url, or any other details related to a Kong entity.) 
+
+If editing is enabled, any Kong entity can be edited from the Cluster View map. Clicking on the edit button from
+ any entity will send user directly to that entity in the declarative editor.
 
 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-home.png?raw=true "kongmap")
@@ -29,13 +35,20 @@ View details of an API Endpoint (Route). The analyzer shows the Service attached
 a breakdown of all plugins/policies in order of execution attached to the route/endpoint. For Kong Enterprise users,
 all entities can be viewed directly via a link to Kong Manager.
 
+If editing is enabled, any Kong entity can be edited from the Endpoint Analyzer map. Clicking on the edit button from
+ any entity will send user directly to that entity in the declarative editor.
+
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-endpoint.png?raw=true "kongmap")
 
 
 #### Declarative Configuration Viewer/Editor
-KongMap is deployed with a browser based implementation of Kong's CLI tool, decK. Here you can view, edit, and export Kong declarative configurations for your open source 
-and Enterprise clusters via YAML. Configurations can easily be copied and pasted from one Kong cluster to another or between workspaces. Declarative
+KongMap is deployed with a browser based implementation of Kong's CLI tool, decK. Here you can view, edit, and export
+Kong declarative configurations for your open source and Enterprise clusters via YAML. Configurations can easily 
+be copied and pasted from one Kong cluster to another or between workspaces. Declarative
 configuration editing can be disabled by KongMap configuration, or managed via RBAC permissions if using Kong Enterprise. 
+
+The Viewer/Editor can be invoked from the Cluster Map view by clicking on on any Kong entity, and from 
+any element from the Endpoint Analyzer. Kong entity ID's can be toggled in and out of view with the viewer/editor.
 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-deck.png?raw=true "kongmap")
 
