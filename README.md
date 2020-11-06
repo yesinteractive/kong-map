@@ -57,6 +57,9 @@ KongMap supports both Kong Open Source and Kong Enterprise Clusters greater than
 KongMap also supports Kong for Kubernetes Ingress Controller versions greater than 0.5 (In Kong for Kubernetes,
 the Ingress Controller's proxy container must have its Admin API exposed in some fashion.)
 
+KongMap uses various public CDN's for various UI elements such as Bootstrap, jQuery, etc. so KongMap will not display
+correctly in a browser on a closed network without Internet access.
+
 ## Docker Installation
 
 Docker image is Alpine 3.11 based running PHP 7.3 on Apache. The container exposes both ports 80 an 443 with a self signed certificated. 
