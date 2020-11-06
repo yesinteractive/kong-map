@@ -10,7 +10,7 @@ available for installation on Docker and Kubernetes only at this time.
 - [Features](#Features)
     - [Cluster View](#Cluster-View)
     - [Endpoint Analyzer](#Endpoint-Analyzer)
-    - [Declarative Configuration Viewer/Editor](#Declarative-Configuration-Viewer/Editor)        
+    - [Declarative Configuration Viewer/Editor](#Declarative-Configuration-Viewer-Editor)        
 - [Compatibility](#Compatibility)
 - [Docker Installation](#Docker-Installation)
 - [Questions and Feedback](#Feedback-and-Issues)
@@ -41,7 +41,7 @@ If editing is enabled, any Kong entity can be edited from the Endpoint Analyzer 
 ![alt text](https://github.com/yesinteractive/kong-map/blob/main/screenshots/kongmap-endpoint.png?raw=true "kongmap")
 
 
-#### Declarative Configuration Viewer/Editor
+#### Declarative Configuration Viewer Editor
 KongMap is deployed with a browser based implementation of Kong's CLI tool, decK. Here you can view, edit, and export
 Kong declarative configurations for your open source and Enterprise clusters via YAML. Configurations can easily 
 be copied and pasted from one Kong cluster to another or between workspaces. Declarative
