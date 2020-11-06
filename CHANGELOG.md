@@ -1,3 +1,12 @@
+## 20201113
+### Added
+- Counts for Kong entities (services, routes, plugins) on Cluster Map cluster entity.
+### Changed
+- Fixed Export Config with ID button function. Both buttons were previously exporting without ID's only.
+### Removed
+- None
+
+
 ## 20201106
 ### Added
 - Ability to edit specific routes, plugins, and services directly from cluster map view. Click on map node
