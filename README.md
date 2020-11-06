@@ -5,7 +5,7 @@ available for installation on Docker and Kubernetes only at this time.
 
 ![GitHub](https://img.shields.io/github/license/yesinteractive/kong-map?style=for-the-badge)
 [![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
-[![Version](https://img.shields.io/badge/version-20201101-green?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
+[![Version](https://img.shields.io/badge/version-20201106-green?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
 
 - [Features](#Features)
 - [Compatibility](#Compatibility)
@@ -83,7 +83,7 @@ Below is a definition of all variables in the KONG_CLUSTERS json config. All var
 | `kong_ent`             | Boolean. Set `true` if you are connecting to a Kong Enterprise Cluster and to enable workspace support in KongMap. Only the default workspace will show if set to `false` and connected to a Kong Entperprise cluster. Otherwise set to `false`          | `yes`     |
 | `kong_ent_token`       | The admin token for connecting to your Kong Enterprise Cluster Admin API. Set by RBAC configuration in Kong. Can be set to `null` if not needed.           | `yes`     |
 | `kong_ent_token_name`  | The admin token header name for connecting to your Kong Enterprise Cluster Admin API.  Typically is `kong-admin-token`. Can be set to `null` if not needed.          | `yes`     |
-| `kong_ent_manager_url` | Full URL to a Kong Manager if you wish to open entities in Kong Manager from KongMap. Can be set to `null` if not needed.           | `yes`     |
+| `kong_ent_manager_url` | Full URL to a Kong Manager if you wish to open entities in Kong Manager from KongMap. Can be set to `null` if not needed or if you do not want any Kong Manager buttons shown for the cluster.           | `yes`     |
 
 Export the config to a variable:
 

@@ -1,11 +1,16 @@
 ## 20201106
 ### Added
-- Ability to edit routes, plugins, and services in route analyzer. Clicking the edit button
-will open the config editor and highlight the element to be edited in the config.
+- Ability to edit specific routes, plugins, and services directly from cluster map view. Click on map node
+to reveal the edit button. Clicking the edit button will open the config editor and highlight the element to be directly edited in the config.
+- Ability to edit specific routes, plugins, and services in route analyzer. Clicking the edit button
+will open the config editor and highlight the element to be directly edited in the config.
+- Toggle to view declarative config with or with entity ID's
 ### Changed
-- None
+- The `kong_ent_manager_url` JSON parameter when set to `null` will hide the Kong Manager buttons
+form KongMap for that cluster, even though the cluster is an enterprise cluster.
+- Export buttons to offer options to export with or without entity ID's.
 ### Removed
--None
+- Kong Logo from KongMap header.
 
 
 ## 20201101
