@@ -1,6 +1,7 @@
-## 20201113
+## 20201109
 ### Added
 - Counts for Kong entities (services, routes, plugins) on Cluster Map cluster entity.
+- Route Analyzer now shows upstream targets configured for a service.
 ### Changed
 - Fixed Export Config with ID button function. Both buttons were previously exporting without ID's only.
 ### Removed
