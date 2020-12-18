@@ -1,11 +1,13 @@
 # KongMap #
 Kongmap is a free visualization tool which allows you to view and declaratively edit configurations of
 your Kong API Gateway Clusters, including Routes, Services, and Plugins/Policies. The tool is 
-available for installation on Docker and Kubernetes only at this time.  
+available for installation on Docker and Kubernetes only at this time.
+
+[View list of latest changes/updates  here.](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md)  
 
 ![GitHub](https://img.shields.io/github/license/yesinteractive/kong-map?style=for-the-badge)
-[![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
-[![Version](https://img.shields.io/badge/version-20201109-green?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/dadjokes) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/kongmap) 
+[![Version](https://img.shields.io/badge/version-20201218-green?style=for-the-badge)](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md) 
 
 - [Features](#Features)
     - [Cluster View](#Cluster-View)

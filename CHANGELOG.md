@@ -1,3 +1,11 @@
+## 20201218
+### Added
+- None
+### Changed
+- Fixed Declarative configs were not displaying in editor for Kong Enterprise 2.2 on the default workspace. This has been resolved.
+### Removed
+- None
+
 ## 20201109
 ### Added
 - Counts for Kong entities (services, routes, plugins) on Cluster Map cluster entity.
