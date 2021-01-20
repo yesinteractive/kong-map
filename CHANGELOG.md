@@ -1,3 +1,11 @@
+## 20210120
+### Added
+- None
+### Changed
+- Fixed: Pop-ups don't show content correctly in map view: https://github.com/yesinteractive/kong-map/issues/10
+### Removed
+- None
+
 ## 20201218
 ### Added
 - None
