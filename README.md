@@ -7,7 +7,7 @@ available for installation on Docker and Kubernetes only at this time.
 
 ![GitHub](https://tinyurl.com/yxmcwnxb)
 [![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/kongmap) 
-[![Version](https://img.shields.io/badge/version-20210120-green?style=for-the-badge)](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md) 
+[![Version](https://img.shields.io/badge/version-20210329-green?style=for-the-badge)](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md) 
 
 - [Features](#Features)
     - [Cluster View](#Cluster-View)

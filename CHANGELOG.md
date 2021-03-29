@@ -1,3 +1,12 @@
+## 20210329
+### Added
+- None
+### Changed
+- Updated Kong decK version to 1.5.1.
+### Removed
+- None
+
+
 ## 20210120
 ### Added
 - None
