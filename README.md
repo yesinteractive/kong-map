@@ -7,7 +7,7 @@ available for installation on Docker and Kubernetes only at this time.
 
 ![GitHub](https://tinyurl.com/yxmcwnxb)
 [![Docker Pulls](https://img.shields.io/docker/pulls/yesinteractive/kongmap?style=for-the-badge)](https://hub.docker.com/r/yesinteractive/kongmap) 
-[![Version](https://img.shields.io/badge/version-20210329-green?style=for-the-badge)](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md) 
+[![Version](https://img.shields.io/badge/version-20210706-green?style=for-the-badge)](https://github.com/yesinteractive/kong-map/blob/main/CHANGELOG.md) 
 
 - [Features](#Features)
     - [Cluster View](#Cluster-View)
@@ -64,7 +64,7 @@ correctly in a browser on a closed network without Internet access.
 
 ## Docker Installation
 
-Docker image is Alpine 3.11 based running PHP 7.3 on Apache. The container exposes both ports 80 an 443 with a self signed certificated. 
+Docker image is Alpine 3.11 based running PHP 7.3 on Apache. The container exposes both ports 8100 an 8143 with a self signed certificated. 
 
 Below are instructions using the `docker run` command. For an example using `docker-compose`, see the example in the [examples directory folder.](https://github.com/yesinteractive/kong-map/blob/main/examples)
 
@@ -119,8 +119,8 @@ running locally and exposing KongMap on port 8100, set to `http://localhost:8100
 $ docker run -d \
   -e "KONGMAP_CLUSTERS_JSON=$KONG_CLUSTERS" \
   -e "KONGMAP_URL=http://url_to_kongmap:8100" \
-  -p 8100:80 \
-  -p 8143:443 \
+  -p 8100:8100 \
+  -p 8143:8143 \
   yesinteractive/kongmap
 ```
 
