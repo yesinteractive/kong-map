@@ -96,7 +96,7 @@ Below is a definition of all variables in the KONG_CLUSTERS json config. All var
 
 | Parameter              | Description | Required  |
 |------------------------|-------------|-----------|
-| `kong_admin_api_url`   | Full URL to Kong Admin API URL. Example: `http://kongadminapi:8001`     | `yes`     |
+| `kong_admin_api_url`   | Full URL to Kong Admin API URL. Make sure there are no trailing slashes in the URL or KongMap will not work properly. Example: `http://kongadminapi:8001`     | `yes`     |
 | `kong_edit_config`     | Boolean. Set to `true` to allow editing of Kong configs via KongMap. `false` will only allow readonly access to configs.           | `yes`     |
 | `kong_ent`             | Boolean. Set `true` if you are connecting to a Kong Enterprise Cluster and to enable workspace support in KongMap. Only the default workspace will show if set to `false` and connected to a Kong Entperprise cluster. Otherwise set to `false`          | `yes`     |
 | `kong_ent_token`       | The admin token for connecting to your Kong Enterprise Cluster Admin API. Set by RBAC configuration in Kong. Can be set to `null` if not needed.           | `yes`     |
