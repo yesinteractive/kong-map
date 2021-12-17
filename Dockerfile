@@ -77,8 +77,8 @@ RUN apk update \
     && wget --header '' https://github.com/yesinteractive/kong-map/archive/main.zip -P /app  \
     && unzip /app/main.zip -d /app \
     && rm -rf /app/main.zip \
-    && cp -r /app/kongmap-main/. /app \
-    && rm -rf /app/kongmap-main \
+    && cp -r /app/kong-map-main/. /app \
+    && rm -rf /app/kong-map-main \
     && chmod 777 /app/controllers/deck/kong.yaml
 
 WORKDIR /app
