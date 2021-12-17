@@ -900,7 +900,7 @@ function loading() {
   }
 </script>
 
-            <div class="dropdown">
+            <div class="dropdown" style="position:absolute;">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"   ">
                 Select Cluster
             </button> 
