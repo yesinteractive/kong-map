@@ -74,7 +74,7 @@ RUN apk update \
     # Empty /var/www and add an index.php to show phpinfo()
     && rm -rf /var/www/* \
     && echo '<?php phpinfo(); ?>' >  /app/phpinfo.php \
-    # && wget --header '' https://github.com/yesinteractive/kong-map/archive/master.zip -P /app  \
+    && wget --header '' https://github.com/yesinteractive/kong-map/archive/main.zip -P /app  \
     && unzip /app/master.zip -d /app \
     && rm -rf /app/master.zip \
     && cp -r /app/kongmap-master/. /app \
