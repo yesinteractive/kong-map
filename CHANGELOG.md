@@ -2,6 +2,16 @@
 ### Added
 - None
 ### Changed
+- Updated: misc UI change to map view
+- Fixed: Navbar issues. Updated style.
+### Removed
+- None
+
+
+## 20210706
+### Added
+- None
+### Changed
 - Fixed: Changed default ports to high ports. Docker image no longer uses ports that require root privilege to run - https://github.com/yesinteractive/kong-map/issues/20
 - Fixed: Mixed content on view/edit cluster - https://github.com/yesinteractive/kong-map/issues/15
 - Fixed: fsl_curl return 0 when Kong admin port is https - https://github.com/yesinteractive/kong-map/issues/19
