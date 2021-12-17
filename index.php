@@ -13,7 +13,7 @@ require_once 'lib/fsl.php';
 #  All in config directory
 
 //version
-option('kongmap_ver', '20210706');
+option('kongmap_ver', '20211216');
 
 
 
