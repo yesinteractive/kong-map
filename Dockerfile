@@ -75,10 +75,10 @@ RUN apk update \
     && rm -rf /var/www/* \
     && echo '<?php phpinfo(); ?>' >  /app/phpinfo.php \
     && wget --header '' https://github.com/yesinteractive/kong-map/archive/main.zip -P /app  \
-    && unzip /app/master.zip -d /app \
-    && rm -rf /app/master.zip \
-    && cp -r /app/kongmap-master/. /app \
-    && rm -rf /app/kongmap-master \
+    && unzip /app/main.zip -d /app \
+    && rm -rf /app/main.zip \
+    && cp -r /app/kongmap-main/. /app \
+    && rm -rf /app/kongmap-main \
     && chmod 777 /app/controllers/deck/kong.yaml
 
 WORKDIR /app
